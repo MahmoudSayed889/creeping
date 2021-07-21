@@ -1,0 +1,418 @@
+body
+{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #1f2334;
+}
+.text-creeping
+{
+    color: #7060fe !important;
+}
+.btn-creeping
+{
+    font-size: .9rem;
+    background-color: #7060fe;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+.btn-outline-creeping
+{
+    font-size: .9rem;
+    background-color: transparent;
+    border: 1px solid #7060fe;
+    transition: all .3s;
+}
+.rounded-right
+{
+    border-radius: 0 !important;
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+}
+svg
+{
+    cursor: pointer;
+}
+
+@media (max-width:992px)
+{
+    .games-slider .swiper-slide
+    {
+        height: 250px !important;
+    }
+}
+
+@media (max-width:768px)
+{
+    .games-slider .swiper-slide
+    {
+        height: 200px !important;
+    }
+}
+@media (max-width:576px)
+{
+    .games-slider .swiper-slide
+    {
+        height: 150px !important;
+    }
+}
+#header
+{
+    background-image: url(../img/WALLPAPER/hero-Copy.png);
+    background-position: center center;
+    background-size: cover;
+}
+#header .layer
+{
+    background: radial-gradient( 500px , rgba( 0, 0, 0, .5 ) , #1f2334);
+}
+.top-nav .globe
+{
+    top: 0;
+    left: 5px;
+    cursor: pointer;
+}
+.top-nav select
+{
+    cursor: pointer;
+    z-index: 9999;
+}
+.navbar
+{
+    background-color: #7060fe;
+}
+.navbar .profile
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.navbar .profile img
+{
+    top: 0;
+    left: 11px;
+    transform: rotate(-45deg);
+}
+.header-content span
+{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.header-content h1
+{
+    font-size: 4rem;
+}
+.header-content .container p
+{
+    margin-bottom: -14px;
+}
+.header-content .icon-bg
+{
+    width: 40px;
+    height: 40px;
+    background-color: #7060fe;
+}
+.header-content .icon-bg svg
+{
+    transform: rotate(-45deg);
+}
+.header-content .icom-border
+{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #7060fe;
+    transform: rotate(45deg);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    color: white !important;
+}
+#games h2
+{
+    letter-spacing: 1px;
+}
+#games .tab-content .games-card
+{
+    
+    background-image: url(../img/WALLPAPER/TOURNAMENTS-BG-Copy.jpg);
+    background-position: center center;
+    background-size: cover;
+    border: 5px solid;
+}
+#games .tab-content .games-card .row
+{
+    background: radial-gradient( 150px 60px , rgba( 0, 0, 0, .5 ) , #1f2334);
+}
+#games .tab-content .games-card-body .team
+{
+    word-spacing: 9px;
+}
+
+.games-slider .swiper-slide
+{
+    height: 350px;
+}
+.games-slider .swiper-container img
+{
+    height: 100%;
+}
+
+.swiper-pagination-bullet
+{
+    background-color: white !important;
+    opacity: 1;
+    transition: all .3s;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active
+{
+    width: 15px;
+    border-radius: 5px;
+    background-color: #7060fe !important;
+}
+
+#eventAndLeague
+{
+    background-image: url(../img/WALLPAPER/LEAGUES-BG.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#eventAndLeague .layer
+{
+    background: radial-gradient( 500px , rgba( 0, 0, 0, .5 ) , #1f2334 );
+}
+#eventAndLeague .league-card
+{
+    background-image: url(../img/WALLPAPER/LEAGUES-BOX-BG.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#eventAndLeague .league-card .row
+{
+    border: 4px solid white;
+    background: radial-gradient( 150px 80px , rgba( 0, 0, 0, .5 ) , #1f2334);
+}
+#eventAndLeague .league-card .btn-creeping:hover
+{
+    border: 1px solid #7060fe;
+    background-color: transparent;
+}
+#eventAndLeague .league-card .btn-outline-creeping:hover
+{
+    border: 1px solid transparent;
+    background-color: #7060fe;
+}
+
+#watch .swiper-container .swiper-slide
+{
+    background-image: url(../img/WALLPAPER/WATCH-BG.jpg);
+    background-position: 100% center;
+    background-size: cover;
+    border: 7px solid #141721;
+}
+#watch .swiper-container .swiper-slide .layer
+{
+    background: linear-gradient( #141721 , rgba(0, 0, 0, .8) , #141721 200px );
+}
+#watch .swiper-container .img-player
+{
+    width: 70px;
+    height: 70px;
+    background-color: #7060fe;
+}
+#watch .swiper-container .border-img-player
+{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #7060fe;
+    background-color: transparent;
+}
+
+/*--------------- VIDEO-01 --------------*/
+#videos .VIDEO-01
+{
+    width: 100%;
+    height: 415px;
+    background-image: url(../img/WALLPAPER/VIDEO-01.jpg);
+    cursor: pointer;
+}
+#videos .VIDEO-01 .item
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( transparent , #7060fe 300px );
+}
+#videos .VIDEO-01 .item p
+{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+/*--------------- VIDEO-02 --------------*/
+#videos .VIDEO-02
+{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/WALLPAPER/VIDEO-02.jpg);
+}
+#videos .VIDEO-02 .item
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( transparent , #2b3149 150px );
+}
+#videos .VIDEO-02 .item p
+{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+/*--------------- VIDEO-03 --------------*/
+#videos .VIDEO-03
+{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/WALLPAPER/VIDEO-03.jpg);
+}
+#videos .VIDEO-03 .item
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( transparent , #2b3149 150px );
+}
+#videos .VIDEO-03 .item p
+{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+/*--------------- VIDEO-04 --------------*/
+#videos .VIDEO-04
+{
+    width: 100%;
+    height: 415px;
+    background-image: url(../img/WALLPAPER/VIDEO-04.jpg);
+}
+#videos .VIDEO-04 .item
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( transparent , #2b3149 350px );
+}
+#videos .VIDEO-04 .item p
+{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+/*--------------- VIDEO-05 --------------*/
+#videos .VIDEO-05
+{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/WALLPAPER/VIDEO-05.jpg);
+}
+#videos .VIDEO-05 .item
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( transparent , #2b3149 150px );
+}
+#videos .VIDEO-05 .item p
+{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+/*--------------- VIDEO-06 --------------*/
+#videos .VIDEO-06
+{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/WALLPAPER/VIDEO-06.jpg);
+}
+#videos .VIDEO-06 .item
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( transparent , #2b3149 150px );
+}
+#videos .VIDEO-06 .item p
+{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+.VIDEO-01, .VIDEO-02, .VIDEO-03, .VIDEO-04, .VIDEO-05, .VIDEO-06
+{
+    margin-bottom: 15px;
+    background-position: center center;
+    background-size: cover;
+}
+#goPro
+{
+    background-image: url(../img/WALLPAPER/TOURNAMENTS-BG-Copy.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#goPro .layer
+{
+    background: radial-gradient( 400px 300px , rgba(112, 96, 254, 0.5) , #7060fe );
+}
+#goPro .layer h2
+{
+    font-size: 4rem;
+    opacity: 0.3;
+    color: rgba(0, 0, 0, 0) !important;
+    -webkit-text-stroke: 3px white;
+}
+#goPro .layer h3
+{
+    font-size: 3rem;
+}
+#goPro .layer p
+{
+    font-size: 2rem;
+    word-spacing: 4rem;
+}
+#goPro .layer button
+{
+    background-color: black !important;
+}
+footer
+{
+    background-color: #12151e;
+}
+footer .bottom-footer
+{
+    background-color: #07080b;
+}
+footer .icon-bg
+{
+    width: 30px;
+    height: 30px;
+    background-color: #7060fe;
+}
+footer .icon-bg svg
+{
+    transform: rotate(-45deg);
+}
+footer .icom-border
+{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #7060fe;
+    transform: rotate(45deg);
+}
