@@ -439,6 +439,7 @@ footer .icom-border
     right: 0;
     display: none;
     background-color: #7060fe;
+    z-index: 999999;
 }
 #btnTop svg
 {
