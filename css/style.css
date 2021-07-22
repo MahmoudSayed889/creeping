@@ -2,6 +2,7 @@ body
 {
     font-family: 'Rajdhani', sans-serif;
     background-color: #1f2334;
+    overflow: hidden;
 }
 .text-creeping
 {
@@ -56,7 +57,7 @@ svg
 }
 #header
 {
-    background-image: url(../img/WALLPAPER/hero-Copy.png);
+    background-image: url(../img/WALLPAPER/hero.png);
     background-position: center center;
     background-size: cover;
 }
@@ -123,6 +124,22 @@ svg
     border: 1px solid #7060fe;
     transform: rotate(45deg);
 }
+.scroll-down
+{
+    top: 90vh;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0%   {top: 90vh;}
+  25%  {top: 93.5vh;}
+  50%  {top: 92vh;}
+  75%  {top: 93.5vh;}
+  100% {top: 90vh;}
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link
 {
     color: white !important;
@@ -134,7 +151,7 @@ svg
 #games .tab-content .games-card
 {
     
-    background-image: url(../img/WALLPAPER/TOURNAMENTS-BG-Copy.jpg);
+    background-image: url(../img/WALLPAPER/TOURNAMENTS-BG.jpg);
     background-position: center center;
     background-size: cover;
     border: 5px solid;
@@ -362,7 +379,7 @@ svg
 }
 #goPro
 {
-    background-image: url(../img/WALLPAPER/TOURNAMENTS-BG-Copy.jpg);
+    background-image: url(../img/WALLPAPER/TOURNAMENTS-BG.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -415,4 +432,64 @@ footer .icom-border
     background-color: transparent;
     border: 1px solid #7060fe;
     transform: rotate(45deg);
+}
+#btnTop
+{
+    bottom: 0;
+    right: 0;
+    display: none;
+    background-color: #7060fe;
+}
+#btnTop svg
+{
+    transform: rotate(180deg);
+}
+
+
+.loading
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #07080b;
+    display: flex;
+    z-index: 9999999999999999999;
+}
+.loader,
+.loader:after
+{
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+}
+.loader 
+{
+    border: .7em solid rgba(255, 255, 255, 0.2);
+    border-left: .7em solid #7060fe;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
