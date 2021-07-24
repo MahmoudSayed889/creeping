@@ -3,6 +3,10 @@ const gameSwiper = new Swiper('.games-slider .swiper-container', {
     slidesPerView: 4,
     spaceBetween: 20,
 
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     
     pagination: {
       el: '.swiper-pagination',
@@ -24,6 +28,10 @@ const watchSwiper = new Swiper('#watch .swiper-container', {
 
   loop: true,
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   
   pagination: {
     el: '.swiper-pagination',
@@ -48,7 +56,7 @@ const watchSwiper = new Swiper('#watch .swiper-container', {
     
     1000: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 20
     },
     
     1200: {
@@ -109,3 +117,10 @@ $(document).ready( function(){
     $("body").css("overflow","auto");
   });
 })
+
+
+AOS.init({
+  duration: 1000,
+  easing: 'ease-in-out',
+  once: true,
+});
