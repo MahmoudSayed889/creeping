@@ -3,6 +3,7 @@ body
     font-family: 'Rajdhani', sans-serif;
     background-color: #1f2334;
     overflow: hidden;
+    overflow-x: hidden !important;
 }
 .text-creeping
 {
@@ -173,7 +174,28 @@ svg
 {
     height: 100%;
 }
+/*----------------------- swiper-navigation -----------------------*/
+.games-slider .swiper-button-prev, .games-slider .swiper-button-next
+{
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    transform: rotate(45deg);
+}
+.games-slider .swiper-button-prev svg, .games-slider .swiper-button-next svg
+{
+    transform: rotate(45deg);
+}
+.games-slider .swiper-button-next, .games-slider .swiper-button-next svg
+{
+    transform: rotate(-45deg) !important;
+}
+.games-slider .swiper-button-next:after, .games-slider .swiper-button-prev:after {
+    content: "";
+}
+/*----------------------- swiper-navigation -----------------------*/
 
+/*------------------ swiper-pagination -------------------*/
 .swiper-pagination-bullet
 {
     background-color: white !important;
@@ -186,6 +208,7 @@ svg
     border-radius: 5px;
     background-color: #7060fe !important;
 }
+/*------------------ swiper-pagination -------------------*/
 
 #eventAndLeague
 {
@@ -243,6 +266,31 @@ svg
     border: 1px solid #7060fe;
     background-color: transparent;
 }
+/*------------------------------------ swiper-navigation ------------------------------------*/
+#watch .swiper-container .swiper-button-prev, #watch .swiper-container .swiper-button-next
+{
+    top: 95%;
+    left: 0;
+    transform: rotate(45deg);
+    z-index: 999999;
+}
+#watch .swiper-container .swiper-button-next
+{
+    left: 50px !important;
+}
+#watch .swiper-container .swiper-button-prev svg, #watch .swiper-container .swiper-button-next svg
+{
+    transform: rotate(45deg);
+}
+#watch .swiper-container .swiper-button-next, #watch .swiper-container .swiper-button-next svg
+{
+    transform: rotate(-45deg) !important;
+}
+#watch .swiper-container .swiper-button-next:after, #watch .swiper-container .swiper-button-prev:after {
+    content: "";
+}
+/*------------------------------------ swiper-navigation ------------------------------------*/
+
 
 /*--------------- VIDEO-01 --------------*/
 #videos .VIDEO-01
@@ -439,6 +487,7 @@ footer .icom-border
     right: 0;
     display: none;
     background-color: #7060fe;
+    cursor: pointer;
     z-index: 999999;
 }
 #btnTop svg
@@ -466,8 +515,8 @@ footer .icom-border
 }
 .loader 
 {
-    border: .7em solid rgba(255, 255, 255, 0.2);
-    border-left: .7em solid #7060fe;
+    border: .4em solid rgba(255, 255, 255, 0.2);
+    border-left: .4em solid #7060fe;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
