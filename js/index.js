@@ -82,7 +82,7 @@ $(window).scroll( function(){
 
   let infoScroll = $(window).scrollTop()
 
-  if( infoScroll > 300 )
+  if( infoScroll >= 300 )
   {
     $(".navbar").addClass("fixed-top , animate__fadeInDown py-2 shadow");
     $("#btnTop").fadeIn()
