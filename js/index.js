@@ -114,7 +114,7 @@ $(".scroll-down svg").click( function(e){
 $(document).ready( function(){
 
   $(".loading").fadeOut(800 , function(){
-    $("body").css("overflow-y","auto");
+    $("body").css("overflow","auto");
   });
 })
 
