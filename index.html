@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -120,7 +121,7 @@
                 </div>
             </nav>
 
-            <div class="header-content text-white">
+            <div class="header-content text-white" >
                 <div class=" text-center py-4">
                     <span>JOIN THE</span>
                     <h1 class=" font-weight-bold">BATTLE OF THE <br> ANCIENTS</h1>
@@ -210,7 +211,7 @@
 
     <section id="games">
         <div class=" container py-5">
-            <div class="row ">
+            <div class="row" data-aos="fade-down">
                 <div class="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-lg-start justify-content-center">
                     <div class=" d-flex align-items-center mb-3">
                         <h2 class=" text-white h5 font-weight-bold m-0 mr-2">TOURNAMENTS</h2>
@@ -247,7 +248,7 @@
             <div class="tab-content mt-4" id="pills-tabContent">
                 <div class="tab-pane fade show active text-white" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                     <div class="row">
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                             <div class="games-card border-dark overflow-hidden">
                                 <div class="row">
                                     <div class="col-2 d-flex flex-column justify-content-between align-items-center">
@@ -268,7 +269,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                             <div class="games-card border-dark overflow-hidden">
                                 <div class="row">
                                     <div class="col-2 d-flex flex-column justify-content-between align-items-center">
@@ -289,7 +290,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                             <div class="games-card border-dark overflow-hidden">
                                 <div class="row">
                                     <div class="col-2 d-flex flex-column justify-content-between align-items-center">
@@ -310,7 +311,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                             <div class="games-card border-dark overflow-hidden">
                                 <div class="row">
                                     <div class="col-2 d-flex flex-column justify-content-between align-items-center">
@@ -331,7 +332,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                             <div class="games-card border-dark overflow-hidden">
                                 <div class="row">
                                     <div class="col-2 d-flex flex-column justify-content-between align-items-center">
@@ -352,7 +353,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                             <div class="games-card border-dark overflow-hidden">
                                 <div class="row">
                                     <div class="col-2 d-flex flex-column justify-content-between align-items-center">
@@ -693,11 +694,11 @@
 
             <div class="games-slider pt-5">
                 <div class=" d-flex justify-content-between">
-                    <h2 class=" text-white h5 font-weight-bold m-0 mr-2">GAMES</h2>
-                    <a class=" nav-link pr-0 font-weight-bold text-creeping" href="#">SEE MORE</a>
+                    <h2 class=" text-white h5 font-weight-bold m-0 mr-2" data-aos="fade-right">GAMES</h2>
+                    <a class=" nav-link pr-0 font-weight-bold text-creeping" href="#" data-aos="fade-left">SEE MORE</a>
                 </div>
 
-                <div class="swiper-container pt-4 pb-5">
+                <div class="swiper-container pt-4 pb-5" data-aos="fade-up">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide"><img class=" w-100" src="img/POSTER/POSTER-01.jpg" alt=""></div>
                       <div class="swiper-slide"><img class=" w-100" src="img/POSTER/POSTER-02.jpg" alt=""></div>
@@ -707,7 +708,22 @@
                       <div class="swiper-slide"><img class=" w-100" src="img/POSTER/POSTER-03.jpg" alt=""></div>
                       <div class="swiper-slide"><img class=" w-100" src="img/POSTER/POSTER-04.jpg" alt=""></div>
                     </div>
-        
+                    
+                    <div class="swiper-button-prev p-1">
+                        <div class=" bg-white w-100 h-100 d-flex justify-content-center align-items-center">
+                            <svg width="15" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="angle-double-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-double-down fa-w-8 fa-3x">
+                                <path fill="black" d="M119.5 262.9L3.5 145.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 223.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 263c-4.7 4.6-12.3 4.6-17-.1zm17 128l116-117.8c4.7-4.7 4.7-12.3 0-17l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L128 351.3 27.6 249.1c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l116 117.8c4.7 4.6 12.3 4.6 17-.1z" class=""></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next p-1">
+                        <div class=" bg-white w-100 h-100 d-flex justify-content-center align-items-center">
+                            <svg width="15" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="angle-double-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-double-down fa-w-8 fa-3x">
+                                <path fill="black" d="M119.5 262.9L3.5 145.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 223.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 263c-4.7 4.6-12.3 4.6-17-.1zm17 128l116-117.8c4.7-4.7 4.7-12.3 0-17l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L128 351.3 27.6 249.1c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l116 117.8c4.7 4.6 12.3 4.6 17-.1z" class=""></path>
+                            </svg>
+                        </div>
+                    </div>
+
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
@@ -719,20 +735,20 @@
         <div class="layer h-100 py-5">
             <div class="container">
                 <div class=" d-flex justify-content-between">
-                    <div class=" d-flex flex-column flex-sm-row align-items-sm-center mb-3">
+                    <div class=" d-flex flex-column flex-sm-row align-items-sm-center mb-3" data-aos="fade-right">
                         <h2 class=" text-white h5 font-weight-bold m-0 mr-2">EVENTS AND LEAGUES</h2>
                         <div class=" d-flex">
                             <button class=" btn btn-creeping text-white font-weight-bold rounded-sm px-4">LIVE</button>
                             <button class=" btn btn-dark font-weight-bold rounded-right py-1">ONGOING</button>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-left">
                         <a class=" nav-link pr-0 font-weight-bold text-creeping" href="#">SEE MORE</a>
                     </div>
                 </div>
     
                 <div class="row mt-4">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3" data-aos="fade-up">
                         <div class="league-card px-2">
                             <div class="row d-flex justify-content-center py-3 border-dark">
                                 <div class="col-3 d-flex flex-column justify-content-around">
@@ -781,7 +797,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3" data-aos="fade-up">
                         <div class="league-card px-2">
                             <div class="row d-flex justify-content-center py-3 border-dark">
                                 <div class="col-3 d-flex flex-column justify-content-around">
@@ -830,7 +846,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3" data-aos="fade-up">
                         <div class="league-card px-2">
                             <div class="row d-flex justify-content-center py-3 border-dark">
                                 <div class="col-3 d-flex flex-column justify-content-around">
@@ -886,7 +902,7 @@
     <section id="watch">
         <div class="container py-5 mt-4">
             <div class=" d-flex justify-content-between">
-                <div class=" d-flex flex-column flex-sm-row align-items-sm-center mb-3">
+                <div class=" d-flex flex-column flex-sm-row align-items-sm-center mb-3" data-aos="fade-right">
                     <h2 class=" text-white h5 font-weight-bold m-0 mr-2">WATCH</h2>
                     <div class=" d-flex">
                         <button class=" btn btn-creeping text-white font-weight-bold rounded-sm px-4">LIVE</button>
@@ -894,12 +910,12 @@
                         <button class=" btn btn-dark font-weight-bold rounded-right py-1">CHANEL</button>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <a class=" nav-link pr-0 font-weight-bold text-creeping" href="#">SEE MORE</a>
                 </div>
             </div>
 
-            <div class="swiper-container pt-4 pb-5">
+            <div class="swiper-container pt-4 pb-5" data-aos="fade-up">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="layer d-flex flex-column justify-content-center align-items-center p-3">
@@ -1017,7 +1033,18 @@
                         </div>
                     </div>
                 </div>
-    
+                
+                <div class="swiper-button-prev">
+                    <svg width="15" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="angle-double-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-double-down fa-w-8 fa-3x">
+                        <path fill="white" d="M119.5 262.9L3.5 145.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 223.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 263c-4.7 4.6-12.3 4.6-17-.1zm17 128l116-117.8c4.7-4.7 4.7-12.3 0-17l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L128 351.3 27.6 249.1c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l116 117.8c4.7 4.6 12.3 4.6 17-.1z" class=""></path>
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="15" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="angle-double-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-double-down fa-w-8 fa-3x">
+                        <path fill="white" d="M119.5 262.9L3.5 145.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 223.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 263c-4.7 4.6-12.3 4.6-17-.1zm17 128l116-117.8c4.7-4.7 4.7-12.3 0-17l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L128 351.3 27.6 249.1c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l116 117.8c4.7 4.6 12.3 4.6 17-.1z" class=""></path>
+                    </svg>
+                </div>
+
                 <div class="swiper-pagination"></div>
             </div>
             
@@ -1027,12 +1054,12 @@
     <section id="videos" class=" pb-5">
         <div class="container py-5">
             <div class=" d-flex justify-content-between align-items-start mb-4">
-                <h2 class=" text-white h5 font-weight-bold">LATEST VIDEOS</h2>
-                <a class=" font-weight-bold text-creeping text-decoration-none" href="#">SEE MORE</a>
+                <h2 class=" text-white h5 font-weight-bold" data-aos="fade-right">LATEST VIDEOS</h2>
+                <a class=" font-weight-bold text-creeping text-decoration-none" href="#" data-aos="fade-left">SEE MORE</a>
             </div>
 
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2">
+                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2" data-aos="fade-up">
                     <div class=" VIDEO-01 position-relative">
                         <a href="#">
                             <div class=" item position-absolute d-flex align-items-end">
@@ -1053,7 +1080,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12" data-aos="fade-up">
                             <div class="VIDEO-02 position-relative">
                                 <a href="#">
                                     <div class=" item position-absolute d-flex align-items-end">
@@ -1072,7 +1099,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12" data-aos="fade-up">
                             <div class="VIDEO-03 position-relative">
                                 <a href="#">
                                     <div class=" item position-absolute d-flex align-items-end">
@@ -1094,7 +1121,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2">
+                <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2" data-aos="fade-up">
                     <div class=" VIDEO-04 position-relative">
                         <a href="#">
                             <div class=" item position-absolute d-flex align-items-end">
@@ -1115,7 +1142,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6 px-sm-2">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12" data-aos="fade-up">
                             <div class="VIDEO-05 position-relative">
                                 <a href="#">
                                     <div class=" item position-absolute d-flex align-items-end">
@@ -1134,7 +1161,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12" data-aos="fade-up">
                             <div class="VIDEO-06 position-relative">
                                 <a href="#">
                                     <div class=" item position-absolute d-flex align-items-end">
@@ -1169,7 +1196,7 @@
                     <h3 class="h2 position-absolute text-white font-weight-bold">GO PRIME BECOME A PRO</h3>
                 </div>
                 <p class=" mt-5 my-md-3 text-white font-weight-bold">PLAY COMPUTER WIN</p>
-                <button class=" btn btn-dark rounded-0 px-5 py-2 text-white font-weight-bold">LET'S PLAY</button>
+                <button class=" btn btn-dark rounded-0 px-5 py-2 text-white font-weight-bold" data-aos="fade-up">LET'S PLAY</button>
            </div>
         </div>
     </section>
@@ -1178,7 +1205,7 @@
         <div class="container">
             <div class="main-footer pt-5">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5" data-aos="fade-in">
                         <p class=" h2 text-white font-weight-bold mb-4">ESPORTS</p>
                         <ul class=" navbar-nav font-weight-bold">
                             <li class=" nav-item"><a class=" nav-link text-white" href="#">PAGE - GAME</a></li>
@@ -1189,7 +1216,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5" data-aos="fade-in">
                         <p class=" h2 text-white font-weight-bold mb-4">COMPANY</p>
                         <ul class=" navbar-nav text-white font-weight-bold">
                             <li class=" nav-item"><a class=" nav-link text-white" href="#">PAGE - ABOUT</a></li>
@@ -1200,7 +1227,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5" data-aos="fade-in">
                         <p class=" h2 text-white font-weight-bold mb-4">FOR YOU</p>
                         <ul class=" navbar-nav text-white font-weight-bold">
                             <li class=" nav-item"><a class=" nav-link text-white" href="#">PAGE - FAQ</a></li>
@@ -1211,7 +1238,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mb-5" data-aos="fade-in">
                         <p class=" h2 text-white font-weight-bold mb-4">PARTNERS</p>
                         
                     </div>
@@ -1228,7 +1255,7 @@
                         <span class=" text-white font-weight-bold">INFO@CREEPING.COM</span>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 d-flex justify-content-around justify-content-sm-between align-items-center mb-4 mb-sm-0 p-sm-0">
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-between align-items-center mb-4 mb-sm-0 p-sm-0">
                         <div class="icom-border d-flex justify-content-center align-items-center">
                             <div class=" icon-bg d-flex justify-content-center align-items-center">
                                 <svg width="15" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-discord fa-w-14 fa-9x">
@@ -1281,28 +1308,13 @@
         
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
 
     <script src="js/index.js"></script>
 </body>
